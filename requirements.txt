@@ -6,5 +6,5 @@ six==1.12.0
 urllib3==1.24.1
 pytest
 requests
-Flask
+flask
 pytest-html

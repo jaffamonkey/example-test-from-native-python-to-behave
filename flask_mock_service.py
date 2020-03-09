@@ -1,7 +1,4 @@
 '''
-Install:
-pip install flask
-
 Run with python CLI:
 python flask_mock_service.py
 

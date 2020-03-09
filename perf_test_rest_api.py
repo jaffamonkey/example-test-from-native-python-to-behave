@@ -1,25 +1,3 @@
-"""
-Description:
-Scale up REST API functional tests to performance tests using threading.
-
-Note: 
-requests module is synchronous and does not support asyncio to await for responses. 
-Another option is to use aiohttp module, which uses asyncio for asynchrony. This option requires re-writing 
-the API test functions, though they are quite like requests functions, and measuring the response time 
-is not straight forward as requests and the response time may not be accurate for the nature of asyncio.
-
-Features:
-
-
-Python version: 3.7 or above
-    
-Install:
-pip install -U requests
-
-Run:
-
-
-"""
 from time import sleep
 import time
 from datetime import datetime
