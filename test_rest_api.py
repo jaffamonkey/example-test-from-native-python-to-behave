@@ -1,18 +1,4 @@
 """
-Description:
-Restful API testing framework example
-
-Features:
-    - Common get/post function to 
-        * Print every request and response in a API output file
-        * Append common headers
-        * Take care of request exception and non-200 response codes and return None, so you only need to care normal json response.
-    - Use flask to mock service
-    - html report
-    
-Install:
-pip install -U pytest requests pytest-html
-
 Run:
 pytest
 
@@ -38,9 +24,7 @@ if sys.version_info < (3,7):
 LOG_LEVEL = logging.INFO # DEBUG, INFO, WARNING, ERROR, CRITICAL
 
 # Assume project structure as below:
-# Scripts - python scripts
-# Logs - logs
-# run.bat - batch script to run
+# logs - logs
 
 # root_path is parent folder of Scripts folder (one level up)
 root_path = os.path.dirname( os.path.dirname(os.path.realpath(__file__)) )
@@ -61,12 +45,12 @@ def setup_logger(log_file, level=logging.INFO, name='', formatter=common_formatt
     return logger   
     
 # default debug logger 
-debug_log_filename = root_path + os.sep + 'Logs' + os.sep + 'debug.log'
+debug_log_filename = root_path + os.sep + 'logs' + os.sep + 'debug.log'
 log = setup_logger(debug_log_filename, LOG_LEVEL,'log')
 
 # logger for API outputs
 api_formatter = logging.Formatter('%(asctime)s: %(message)s', datefmt='%Y-%m-%d %I:%M:%S')
-api_outputs_filename = root_path + os.sep + 'Logs' + os.sep + 'api_outputs.log'
+api_outputs_filename = root_path + os.sep + 'logs' + os.sep + 'api_outputs.log'
 log_api = setup_logger(api_outputs_filename, LOG_LEVEL,'log_api',formatter = api_formatter)
 
 # pretty print Restful request to API log
