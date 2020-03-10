@@ -23,10 +23,12 @@ if sys.version_info < (3,7):
 LOG_LEVEL = logging.DEBUG # DEBUG, INFO, WARNING, ERROR, CRITICAL
 
 # Assume project structure as below:
-# logs - logs
+# Scripts - python scripts
+# Logs - logs
+# run.bat - batch script to run
 
 # root_path is parent folder of Scripts folder (one level up)
-root_path = os.path.dirname( os.path.dirname(os.path.realpath(__file__)) )
+root_path = os.path.dirname(os.path.abspath(__file__))
 
 # %(levelname)7s to align 7 bytes to right, %(levelname)-7s to left.
 # common_formatter = logging.Formatter('%(asctime)s [%(levelname)-7s][ln-%(lineno)-3d]: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
@@ -51,7 +53,7 @@ log = setup_logger(debug_log_filename, LOG_LEVEL,'log')
 # logger for API outputs
 # api_formatter = logging.Formatter('%(asctime)s: %(message)s', datefmt='%Y-%m-%d %I:%M:%S')
 api_formatter = logging.Formatter('%(asctime)s: %(message)s')
-api_outputs_filename = root_path + os.sep + 'logs' + os.sep + 'api_outputs.log'
+api_outputs_filename = root_path + os.sep + 'Logs' + os.sep + 'api_outputs.log'
 log_api = setup_logger(api_outputs_filename, LOG_LEVEL,'log_api',formatter = api_formatter)
 
 # pretty print Restful request to API log
@@ -168,7 +170,7 @@ class TestAPI:
     # Then run the tests.
     def test_mock_service(self):    
         log.info('Calling %s.' % inspect.stack()[0][3])               
-        url = r'http://127.0.0.1:5000/json'        
+        url = 'http://127.0.0.1:5000/json'        
         resp = self.get(url)
         
         # Convert assert for functional tests to validate for performance tests so it won't stop on a test failure. 

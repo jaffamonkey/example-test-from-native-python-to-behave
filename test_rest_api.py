@@ -1,10 +1,3 @@
-"""
-Run:
-pytest
-
-Python version: 3.7 or above
-
-"""
 from time import sleep
 from datetime import datetime
 import logging
@@ -26,8 +19,9 @@ LOG_LEVEL = logging.INFO # DEBUG, INFO, WARNING, ERROR, CRITICAL
 # Assume project structure as below:
 # logs - logs
 
-# root_path is parent folder of Scripts folder (one level up)
-root_path = os.path.dirname( os.path.dirname(os.path.realpath(__file__)) )
+# root_path is parent folder of repo.
+root_path = os.path.dirname(__file__)
+# root_path = os.path.dirname( os.path.dirname(os.path.realpath(__file__)) )
 
 # %(levelname)7s to align 7 bytes to right, %(levelname)-7s to left.
 common_formatter = logging.Formatter('%(asctime)s [%(levelname)-7s][ln-%(lineno)-3d]: %(message)s', datefmt='%Y-%m-%d %I:%M:%S')
@@ -45,6 +39,7 @@ def setup_logger(log_file, level=logging.INFO, name='', formatter=common_formatt
     return logger   
     
 # default debug logger 
+# debug_log_filename = 'logs' + os.sep + 'debug.log'
 debug_log_filename = root_path + os.sep + 'logs' + os.sep + 'debug.log'
 log = setup_logger(debug_log_filename, LOG_LEVEL,'log')
 
