@@ -241,7 +241,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 09-Mar-2020 at 23:33:18 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <p>Report generated on 17-Mar-2020 at 17:49:12 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -257,7 +257,7 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.6</td></tr></table>
     <h2>Summary</h2>
-    <p>3 tests ran in 0.84 seconds. </p>
+    <p>3 tests ran in 0.92 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -273,11 +273,11 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_rest_api.py::TestAPI::test_post_headers_body_json</td>
-          <td class="col-duration">0.30</td>
+          <td class="col-duration">0.33</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log_api:test_rest_api.py:69 -----------Request-----------&gt;
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log_api:test_rest_api.py:61 -----------Request-----------&gt;
 POST http://httpbin.org/post
 
 User-Agent: Python Requests
@@ -292,12 +292,12 @@ Content-Length: 39
     &quot;key2&quot;: &quot;value2&quot;
 }
 
-[32mINFO    [0m log_api:test_rest_api.py:113 &lt;-----------Response-----------
+[32mINFO    [0m log_api:test_rest_api.py:105 &lt;-----------Response-----------
 Status code:200
 
-Date: Mon, 09 Mar 2020 23:33:18 GMT
+Date: Tue, 17 Mar 2020 17:49:11 GMT
 Content-Type: application/json
-Content-Length: 520
+Content-Length: 521
 Connection: keep-alive
 Server: gunicorn/19.9.0
 Access-Control-Allow-Origin: *
@@ -315,17 +315,17 @@ Access-Control-Allow-Credentials: true
         &quot;Content-Type&quot;: &quot;application/json&quot;,
         &quot;Host&quot;: &quot;httpbin.org&quot;,
         &quot;User-Agent&quot;: &quot;Python Requests&quot;,
-        &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5e66d23e-d551ae245eb069c83a6d8929&quot;
+        &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5e710d97-7d93eb98b2bfeed25f34e2fa&quot;
     },
     &quot;json&quot;: {
         &quot;key1&quot;: 1,
         &quot;key2&quot;: &quot;value2&quot;
     },
-    &quot;origin&quot;: &quot;109.149.92.209&quot;,
+    &quot;origin&quot;: &quot;213.122.116.195&quot;,
     &quot;url&quot;: &quot;http://httpbin.org/post&quot;
 }
 
-[32mINFO    [0m log:test_rest_api.py:133 Test test_post_headers_body_json passed.<br/></div></td></tr></tbody>
+[32mINFO    [0m log:test_rest_api.py:125 Test test_post_headers_body_json passed.<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -334,7 +334,7 @@ Access-Control-Allow-Credentials: true
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log_api:test_rest_api.py:69 -----------Request-----------&gt;
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log_api:test_rest_api.py:61 -----------Request-----------&gt;
 POST http://httpbin.org/post
 
 User-Agent: Python Requests
@@ -346,12 +346,12 @@ Content-Length: 18
 
 key1=1&amp;key2=value2
 
-[32mINFO    [0m log_api:test_rest_api.py:113 &lt;-----------Response-----------
+[32mINFO    [0m log_api:test_rest_api.py:105 &lt;-----------Response-----------
 Status code:200
 
-Date: Mon, 09 Mar 2020 23:33:18 GMT
+Date: Tue, 17 Mar 2020 17:49:12 GMT
 Content-Type: application/json
-Content-Length: 452
+Content-Length: 453
 Connection: keep-alive
 Server: gunicorn/19.9.0
 Access-Control-Allow-Origin: *
@@ -369,24 +369,24 @@ Access-Control-Allow-Credentials: true
         &quot;Content-Type&quot;: &quot;application/json&quot;,
         &quot;Host&quot;: &quot;httpbin.org&quot;,
         &quot;User-Agent&quot;: &quot;Python Requests&quot;,
-        &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5e66d23e-bcd80f053fbf152ff921002d&quot;
+        &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5e710d98-f4571ac408c4f6f830e55880&quot;
     },
     &quot;json&quot;: null,
-    &quot;origin&quot;: &quot;109.149.92.209&quot;,
+    &quot;origin&quot;: &quot;213.122.116.195&quot;,
     &quot;url&quot;: &quot;http://httpbin.org/post&quot;
 }
 
-[32mINFO    [0m log:test_rest_api.py:146 Test test_post_normal_body passed.<br/></div></td></tr></tbody>
+[32mINFO    [0m log:test_rest_api.py:138 Test test_post_normal_body passed.<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_rest_api.py::TestAPI::test_get_auth_httpbin</td>
-          <td class="col-duration">0.19</td>
+          <td class="col-duration">0.20</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log:test_rest_api.py:153 Calling test_get_auth_httpbin.
-[32mINFO    [0m log_api:test_rest_api.py:69 -----------Request-----------&gt;
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log:test_rest_api.py:145 Calling test_get_auth_httpbin.
+[32mINFO    [0m log_api:test_rest_api.py:61 -----------Request-----------&gt;
 GET http://httpbin.org/basic-auth/user1/password1
 
 User-Agent: python-requests/2.23.0
@@ -397,10 +397,10 @@ Authorization: Basic dXNlcjE6cGFzc3dvcmQx
 
 None
 
-[32mINFO    [0m log_api:test_rest_api.py:113 &lt;-----------Response-----------
+[32mINFO    [0m log_api:test_rest_api.py:105 &lt;-----------Response-----------
 Status code:200
 
-Date: Mon, 09 Mar 2020 23:33:18 GMT
+Date: Tue, 17 Mar 2020 17:49:12 GMT
 Content-Type: application/json
 Content-Length: 48
 Connection: keep-alive
@@ -413,4 +413,4 @@ Access-Control-Allow-Credentials: true
     &quot;user&quot;: &quot;user1&quot;
 }
 
-[32mINFO    [0m log:test_rest_api.py:161 Test test_get_auth_httpbin passed.<br/></div></td></tr></tbody></table></body></html>
+[32mINFO    [0m log:test_rest_api.py:153 Test test_get_auth_httpbin passed.<br/></div></td></tr></tbody></table></body></html>

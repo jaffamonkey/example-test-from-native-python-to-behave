@@ -13,6 +13,9 @@ Example tests from native Python to Behave
 ### Run Functional tests
 ```pytest```
 
+### Run Behave tests
+```behave```
+
 ### Run Performance tests
 #### Run Flash API server
 ```python flask_mock_service.py```
