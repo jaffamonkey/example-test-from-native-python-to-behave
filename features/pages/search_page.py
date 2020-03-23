@@ -3,10 +3,16 @@ from selenium.webdriver.common.by import By
 from features.pages.base_page import BasePage
 
 
-class LoginPage(BasePage):
-    FIELD_USERNAME = (By.NAME, "username")
-    FIELD_PASSWORD = (By.NAME, "password")
+class SearchPage(BasePage):
     BUTTON_LOGIN = (By.XPATH, "//button[@type='submit']")
+    FIELD_SEARCH = (By.XPATH, "//input[@placeholder = 'Search']")
+
+    def _verify_page(self):
+        self.on_this_page(self.FIELD_SEARCH)
+        
+    def type_in_search_field(self, text):
+        self.type_in(self.FIELD_SEARCH, text)
+
 
     def _verify_page(self):
         self.on_this_page(self.FIELD_USERNAME, self.FIELD_PASSWORD)
@@ -17,5 +23,5 @@ class LoginPage(BasePage):
     def enter_password(self, password):
         self.type_in(self.FIELD_PASSWORD, password)
 
-    def click_login(self):
+    def click_search(self):
         self.click_on(self.BUTTON_LOGIN)
