@@ -18,6 +18,6 @@ Example tests from native Python to Behave
 
 ### Run Performance tests
 #### Run Flash API server
-```python flask_mock_service.py```
+```python ./api/flask_mock_service.py```
 #### Run Performance test
-```python perf_test_rest_api.py```
+```python ./api/perf_test_rest_api.py```

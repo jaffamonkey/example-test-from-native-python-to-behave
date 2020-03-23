@@ -2,7 +2,6 @@ import configparser
 
 from selenium import webdriver
 
-
 def before_all(context):
     context.driver = webdriver.Chrome("./chromedriver")
     context.driver.implicitly_wait(10)
@@ -11,10 +10,8 @@ def before_all(context):
     parser.read("behave.ini")
     context.config = parser
 
-
 def before_scenario(context, scenario):
     context.driver.delete_all_cookies()
-
 
 def after_all(context):
     context.driver.quit()
