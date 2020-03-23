@@ -2,8 +2,7 @@ from behave import *
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.wait import WebDriverWait
-from features.pages.login_page import SearchPage
-from features.pages.main_page import MainPage
+from features.pages.search_page import SearchPage
 
 @when('I click element with text "{text}"')
 def step_impl(context, text):
@@ -19,12 +18,12 @@ def step_impl(context, text):
 def step_impl(context):
     context.driver.get("https://duckduckgo.com")
 
-@when('I type "{searchstring}"  in search field')
-def step_impl(context, username):
-    login_page = SearchPage(context.driver)
-    login_page.enter_username(username)
+@when('I type "{searchstring}" in search field')
+def step_impl(context, searchstring):
+    search_page = SearchPage(context.driver)
+    search_page.type_in_search_field(searchstring)
 
 @when("I click search button")
 def step_impl(context):
-    login_page = SearchPage(context.driver)
-    login_page.click_search()
+    search_page = SearchPage(context.driver)
+    search_page.click_search()

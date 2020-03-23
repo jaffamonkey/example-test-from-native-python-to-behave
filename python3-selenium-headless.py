@@ -12,13 +12,13 @@ chrome_options.add_argument("--window-size=1920x1080")
 chrome_driver = os.getcwd() + os.sep + "chromedriver"
 
 # go to Google and click the I'm Feeling Lucky button
-driver = webdriver.Chrome(chrome_options=chrome_options, executable_path=chrome_driver)
+driver = webdriver.Chrome(options=chrome_options, executable_path=chrome_driver)
 driver.get("https://duckduckgo.com")
-        searchField = driver.find_element_by_name("q")
-        searchField.send_keys("TrumpKlon")
-        searchButton = driver.find_element_by_css_selector("[name=btnI]")
-        searchButton.click()
-        self.assertIn("TrumpKlon", driver.title)
-        assert "Donald Trump personality simulator in the world." in driver.page_source
-        # capture the screen
+searchField = driver.find_element_by_name("q")
+searchField.send_keys("TrumpKlon")
+searchButton = driver.find_element_by_css_selector("[id=search_button_homepage]")
+searchButton.click()
+assert "TrumpKlon" in driver.title
+assert "Donald Trump personality simulator in the world." in driver.page_source
+# capture the screen
 driver.get_screenshot_as_file("headless_test_end_capture.png")

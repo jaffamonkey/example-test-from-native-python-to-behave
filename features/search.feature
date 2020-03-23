@@ -4,7 +4,7 @@ Feature: Login
   Scenario Outline: Search test
     Given I open search page
     When I type "<searchstring>" in search field
-    When I click element with text "Log in"
+    When I click search button
     Then I see element with text "<resulttext>"
 
     Examples:

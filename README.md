@@ -10,7 +10,13 @@ Example tests from native Python to Behave
 #### Activiate env
 ```source env/bin/activate```
 
-### Run Functional tests
+### Run Python UI tests
+```
+python3 python3-selenium-headless.py
+python3 python3-selenium.py
+```
+
+### Run Pytest API tests
 ```pytest```
 
 ### Run Behave tests

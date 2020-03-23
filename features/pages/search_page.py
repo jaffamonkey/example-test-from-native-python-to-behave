@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from features.pages.base_page import BasePage
 
 class SearchPage(BasePage):
-    BUTTON_SEARCH = (By.XPATH, "//button[@type='submit']")
+    BUTTON_SEARCH = (By.ID , "search_button_homepage")
     FIELD_SEARCH = (By.NAME, "q")
 
     def _verify_page(self):
