@@ -3,7 +3,7 @@ import configparser
 from selenium import webdriver
 
 def before_all(context):
-    context.driver = webdriver.Chrome("bin/chromedriver")
+    context.driver = webdriver.Chrome()
     context.driver.implicitly_wait(10)
 
     parser = configparser.ConfigParser()
