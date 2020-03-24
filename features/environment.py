@@ -1,12 +1,12 @@
 import configparser
 # from selenium import webdriver
+from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 def before_all(context):
     options = Options()
     options.headless = True
     context.driver = webdriver.Chrome(CHROMEDRIVER_PATH, chrome_options=options)
-
     context.driver = webdriver.Chrome()
     context.driver.implicitly_wait(10)
 
