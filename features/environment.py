@@ -10,7 +10,6 @@ def before_all(context):
     context.driver = webdriver.Chrome(CHROMEDRIVER_PATH, chrome_options=options)
     context.driver = webdriver.Chrome()
     context.driver.implicitly_wait(10)
-
     parser = configparser.ConfigParser()
     parser.read("behave.ini")
     context.config = parser
