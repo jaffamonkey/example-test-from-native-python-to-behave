@@ -1,5 +1,7 @@
 language: python
 python:
+addons:
+  chrome: stable
 # current default Python on Travis CI
   - "3.7" 
 # command to install dependencies
