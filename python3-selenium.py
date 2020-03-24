@@ -8,7 +8,7 @@ class PythonOrgSearch(unittest.TestCase):
         chrome_options = Options()
         chrome_options.add_argument("--headless")
         chrome_options.add_argument("--window-size=1920x1080")
-        self.driver = os.getcwd() + os.sep + "chromedriver"
+        self.driver = os.getcwd() + os.sep + "bin/chromedriver"
         
 
 

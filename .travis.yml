@@ -4,6 +4,8 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+  - curl -SL https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_mac64.zip > chromedriver.zip
+  - unzip chromedriver.zip -d bin/
 # command to run tests
 script:
   - python3 python3-selenium-headless.py
