@@ -1,12 +1,17 @@
 language: python
 python:
-  - "3.7" # current default Python on Travis CI
+# current default Python on Travis CI
+  - "3.7" 
 # command to install dependencies
 install:
   - pip install -r requirements.txt
   - curl -SL https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_mac64.zip > chromedriver.zip
   - unzip chromedriver.zip -d bin/
 # command to run tests
+before-script:
+  - wget https://chromedriver.storage.googleapis.com/81.0.4044.69/chromedriver_linux64.zip
+  - unzip chromedriver_linux64.zip -d /home/travis/virtualenv/python3.7/bin/
+  - export CHROME_BIN=chromium-browser
 script:
   - python3 python3-selenium-headless.py
   - pytest
