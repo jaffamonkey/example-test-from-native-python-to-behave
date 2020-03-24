@@ -11,7 +11,6 @@ class PythonOrgSearch(unittest.TestCase):
         self.driver = os.getcwd() + os.sep + "bin/chromedriver"
         
 
-
     def test_search_in_python_org(self):
         driver = self.driver
         driver.get("https://duckduckgo.com")
