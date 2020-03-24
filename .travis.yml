@@ -9,7 +9,7 @@ install:
   - pip install -r requirements.txt
 # command to run tests
 before-script:
-  - wget -O /tmp/chromedriver.zip https://chromedriver.storage.googleapis.com/81.0.4044.69/chromedriver_linux64.zip
+  - wget -O /tmp/chromedriver.zip https://chromedriver.storage.googleapis.com/80.0.3987.106/chromedriver_linux64.zip
   - mkdir $HOME/chromedriver && unzip /tmp/chromedriver.zip -d $HOME/chromedriver
   - export PATH=$HOME/chromedriver:$PATH
 script:
