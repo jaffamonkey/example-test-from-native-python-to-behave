@@ -3,7 +3,7 @@ parse==1.11.1
 parse-type==0.4.2
 selenium==3.141.0
 six==1.12.0
-urllib3==1.24.1
+urllib3==1.24.2
 pytest
 requests==2.23.0
 flask
