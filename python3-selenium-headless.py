@@ -9,10 +9,10 @@ chrome_options.add_argument("--window-size=1920x1080")
 
 # download the chrome driver from https://sites.google.com/a/chromium.org/chromedriver/downloads and put it in the
 # current directory
-chrome_driver = os.getcwd() + "/bin/chromedriver"
+chrome_driver = os.getcwd() + os.sep + "chromedriver"
 
 # go to Google and click the I'm Feeling Lucky button
-driver = webdriver.Chrome(options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options, executable_path=chrome_driver)
 driver.get("https://duckduckgo.com")
 searchField = driver.find_element_by_name("q")
 searchField.send_keys("TrumpKlon")

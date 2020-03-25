@@ -243,12 +243,12 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 23-Mar-2020 at 20:40:48 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <p>Report generated on 25-Mar-2020 at 02:10:12 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
         <td>Packages</td>
-        <td>{"pluggy": "0.13.1", "py": "1.8.1", "pytest": "5.4.1"}</td></tr>
+        <td>{"pluggy": "0.13.1", "py": "1.8.1", "pytest": "5.0.0"}</td></tr>
       <tr>
         <td>Platform</td>
         <td>Darwin-17.2.0-x86_64-i386-64bit</td></tr>
@@ -259,7 +259,7 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.6</td></tr></table>
     <h2>Summary</h2>
-    <p>3 tests ran in 0.94 seconds. </p>
+    <p>3 tests ran in 1.03 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -275,144 +275,138 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">api/test_rest_api.py::TestAPI::test_post_headers_body_json</td>
-          <td class="col-duration">0.34</td>
+          <td class="col-duration">0.36</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log_api:test_rest_api.py:61 -----------Request-----------&gt;
-POST http://httpbin.org/post
-
-User-Agent: Python Requests
-Accept-Encoding: gzip, deflate
-Accept: */*
-Connection: keep-alive
-Content-Type: application/json
-Content-Length: 39
-
-{
-    &quot;key1&quot;: 1,
-    &quot;key2&quot;: &quot;value2&quot;
-}
-
+                                     POST http://httpbin.org/post
+                                     
+                                     User-Agent: Python Requests
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 39
+                                     
+                                     {
+                                         &quot;key1&quot;: 1,
+                                         &quot;key2&quot;: &quot;value2&quot;
+                                     }
 [32mINFO    [0m log_api:test_rest_api.py:105 &lt;-----------Response-----------
-Status code:200
-
-Date: Mon, 23 Mar 2020 20:40:55 GMT
-Content-Type: application/json
-Content-Length: 520
-Connection: keep-alive
-Server: gunicorn/19.9.0
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Credentials: true
-
-{
-    &quot;args&quot;: {},
-    &quot;data&quot;: &quot;{\n    \&quot;key1\&quot;: 1,\n    \&quot;key2\&quot;: \&quot;value2\&quot;\n}&quot;,
-    &quot;files&quot;: {},
-    &quot;form&quot;: {},
-    &quot;headers&quot;: {
-        &quot;Accept&quot;: &quot;*/*&quot;,
-        &quot;Accept-Encoding&quot;: &quot;gzip, deflate&quot;,
-        &quot;Content-Length&quot;: &quot;39&quot;,
-        &quot;Content-Type&quot;: &quot;application/json&quot;,
-        &quot;Host&quot;: &quot;httpbin.org&quot;,
-        &quot;User-Agent&quot;: &quot;Python Requests&quot;,
-        &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5e791ed7-52067754d9f911f02c2bbfe6&quot;
-    },
-    &quot;json&quot;: {
-        &quot;key1&quot;: 1,
-        &quot;key2&quot;: &quot;value2&quot;
-    },
-    &quot;origin&quot;: &quot;151.230.69.100&quot;,
-    &quot;url&quot;: &quot;http://httpbin.org/post&quot;
-}
-
+                                      Status code:200
+                                      
+                                      Date: Wed, 25 Mar 2020 02:10:11 GMT
+                                      Content-Type: application/json
+                                      Content-Length: 520
+                                      Connection: keep-alive
+                                      Server: gunicorn/19.9.0
+                                      Access-Control-Allow-Origin: *
+                                      Access-Control-Allow-Credentials: true
+                                      
+                                      {
+                                          &quot;args&quot;: {},
+                                          &quot;data&quot;: &quot;{\n    \&quot;key1\&quot;: 1,\n    \&quot;key2\&quot;: \&quot;value2\&quot;\n}&quot;,
+                                          &quot;files&quot;: {},
+                                          &quot;form&quot;: {},
+                                          &quot;headers&quot;: {
+                                              &quot;Accept&quot;: &quot;*/*&quot;,
+                                              &quot;Accept-Encoding&quot;: &quot;gzip, deflate&quot;,
+                                              &quot;Content-Length&quot;: &quot;39&quot;,
+                                              &quot;Content-Type&quot;: &quot;application/json&quot;,
+                                              &quot;Host&quot;: &quot;httpbin.org&quot;,
+                                              &quot;User-Agent&quot;: &quot;Python Requests&quot;,
+                                              &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5e7abd83-369fd9902814a432331c71fe&quot;
+                                          },
+                                          &quot;json&quot;: {
+                                              &quot;key1&quot;: 1,
+                                              &quot;key2&quot;: &quot;value2&quot;
+                                          },
+                                          &quot;origin&quot;: &quot;151.230.69.100&quot;,
+                                          &quot;url&quot;: &quot;http://httpbin.org/post&quot;
+                                      }
 [32mINFO    [0m log:test_rest_api.py:125 Test test_post_headers_body_json passed.<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">api/test_rest_api.py::TestAPI::test_post_normal_body</td>
-          <td class="col-duration">0.19</td>
+          <td class="col-duration">0.25</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log_api:test_rest_api.py:61 -----------Request-----------&gt;
-POST http://httpbin.org/post
-
-User-Agent: Python Requests
-Accept-Encoding: gzip, deflate
-Accept: */*
-Connection: keep-alive
-Content-Type: application/json
-Content-Length: 18
-
-key1=1&amp;key2=value2
-
+                                     POST http://httpbin.org/post
+                                     
+                                     User-Agent: Python Requests
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 18
+                                     
+                                     key1=1&amp;key2=value2
 [32mINFO    [0m log_api:test_rest_api.py:105 &lt;-----------Response-----------
-Status code:200
-
-Date: Mon, 23 Mar 2020 20:40:55 GMT
-Content-Type: application/json
-Content-Length: 452
-Connection: keep-alive
-Server: gunicorn/19.9.0
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Credentials: true
-
-{
-    &quot;args&quot;: {},
-    &quot;data&quot;: &quot;key1=1&amp;key2=value2&quot;,
-    &quot;files&quot;: {},
-    &quot;form&quot;: {},
-    &quot;headers&quot;: {
-        &quot;Accept&quot;: &quot;*/*&quot;,
-        &quot;Accept-Encoding&quot;: &quot;gzip, deflate&quot;,
-        &quot;Content-Length&quot;: &quot;18&quot;,
-        &quot;Content-Type&quot;: &quot;application/json&quot;,
-        &quot;Host&quot;: &quot;httpbin.org&quot;,
-        &quot;User-Agent&quot;: &quot;Python Requests&quot;,
-        &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5e791ed7-b3ad575df0e21d7ef9ed4916&quot;
-    },
-    &quot;json&quot;: null,
-    &quot;origin&quot;: &quot;151.230.69.100&quot;,
-    &quot;url&quot;: &quot;http://httpbin.org/post&quot;
-}
-
+                                      Status code:200
+                                      
+                                      Date: Wed, 25 Mar 2020 02:10:12 GMT
+                                      Content-Type: application/json
+                                      Content-Length: 452
+                                      Connection: keep-alive
+                                      Server: gunicorn/19.9.0
+                                      Access-Control-Allow-Origin: *
+                                      Access-Control-Allow-Credentials: true
+                                      
+                                      {
+                                          &quot;args&quot;: {},
+                                          &quot;data&quot;: &quot;key1=1&amp;key2=value2&quot;,
+                                          &quot;files&quot;: {},
+                                          &quot;form&quot;: {},
+                                          &quot;headers&quot;: {
+                                              &quot;Accept&quot;: &quot;*/*&quot;,
+                                              &quot;Accept-Encoding&quot;: &quot;gzip, deflate&quot;,
+                                              &quot;Content-Length&quot;: &quot;18&quot;,
+                                              &quot;Content-Type&quot;: &quot;application/json&quot;,
+                                              &quot;Host&quot;: &quot;httpbin.org&quot;,
+                                              &quot;User-Agent&quot;: &quot;Python Requests&quot;,
+                                              &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5e7abd84-4933f288fc0ebe2837e026b4&quot;
+                                          },
+                                          &quot;json&quot;: null,
+                                          &quot;origin&quot;: &quot;151.230.69.100&quot;,
+                                          &quot;url&quot;: &quot;http://httpbin.org/post&quot;
+                                      }
 [32mINFO    [0m log:test_rest_api.py:138 Test test_post_normal_body passed.<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">api/test_rest_api.py::TestAPI::test_get_auth_httpbin</td>
-          <td class="col-duration">0.18</td>
+          <td class="col-duration">0.20</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log:test_rest_api.py:145 Calling test_get_auth_httpbin.
 [32mINFO    [0m log_api:test_rest_api.py:61 -----------Request-----------&gt;
-GET http://httpbin.org/basic-auth/user1/password1
-
-User-Agent: python-requests/2.23.0
-Accept-Encoding: gzip, deflate
-Accept: */*
-Connection: keep-alive
-Authorization: Basic dXNlcjE6cGFzc3dvcmQx
-
-None
-
+                                     GET http://httpbin.org/basic-auth/user1/password1
+                                     
+                                     User-Agent: python-requests/2.23.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Authorization: Basic dXNlcjE6cGFzc3dvcmQx
+                                     
+                                     None
 [32mINFO    [0m log_api:test_rest_api.py:105 &lt;-----------Response-----------
-Status code:200
-
-Date: Mon, 23 Mar 2020 20:40:56 GMT
-Content-Type: application/json
-Content-Length: 48
-Connection: keep-alive
-Server: gunicorn/19.9.0
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Credentials: true
-
-{
-    &quot;authenticated&quot;: true,
-    &quot;user&quot;: &quot;user1&quot;
-}
-
+                                      Status code:200
+                                      
+                                      Date: Wed, 25 Mar 2020 02:10:12 GMT
+                                      Content-Type: application/json
+                                      Content-Length: 48
+                                      Connection: keep-alive
+                                      Server: gunicorn/19.9.0
+                                      Access-Control-Allow-Origin: *
+                                      Access-Control-Allow-Credentials: true
+                                      
+                                      {
+                                          &quot;authenticated&quot;: true,
+                                          &quot;user&quot;: &quot;user1&quot;
+                                      }
 [32mINFO    [0m log:test_rest_api.py:153 Test test_get_auth_httpbin passed.<br/></div></td></tr></tbody></table></body></html>

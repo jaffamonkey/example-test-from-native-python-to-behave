@@ -10,12 +10,6 @@ Example tests from native Python to Behave
 #### Activiate env
 ```source env/bin/activate```
 
-#### Download latest Chromedriver
-```
-curl -SL https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_mac64.zip > chromedriver.zip
-unzip chromedriver.zip -d bin/
-```
-
 ### Run Python UI tests
 ```
 python3 python3-selenium-headless.py
