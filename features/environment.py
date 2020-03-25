@@ -18,5 +18,5 @@ def before_all(context):
 def before_scenario(context, scenario):
     context.driver.delete_all_cookies()
 
-def after_all(context):
-    context.driver.quit()
+# def after_all(context):
+#     context.driver.quit()
